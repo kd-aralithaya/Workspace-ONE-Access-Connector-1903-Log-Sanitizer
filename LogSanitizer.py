@@ -92,10 +92,11 @@ def sanitizeLogs():
                 
 
     
-filepath = "C:/Users/dkrithi/OneDrive - VMware, Inc/VMwareCorp/Desktop/Connector" #Enter your log file path here
+filepath = " " #Enter your log file path here
+parent_dir = 'C:/Desktop/SanitizedLogs' # Destination folder
+
 directories = ['conf', 'installerlogs', 'logs', 'systemroot']
 conf = ['/domain_krb.properties','/runtime-config.properties','/system-config.properties']
-parent_dir = 'C:/Users/dkrithi/OneDrive - VMware, Inc/VMwareCorp/Desktop/SanitizedLogs'
 servername = r'(\s+"java.naming.provider.url" : "ldap://)([A-Za-z0-9\.-]+)'
 LDAPname = r'([A-Za-z0-9\.]+)=([A-Za-z0-9\.-]+)'
 connector_hostname = r'([a-z]+.hostname=)([A-Za-z0-9\.-]+)'
